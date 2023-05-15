@@ -40,13 +40,32 @@
 		style="font-size: 18px; font-family: Outfit"
 		class="flex flex-col items-center mt-[19rem] bg-dark-blue-main text-gray font-[300]"
 	>
-		<div class="w-[43.7rem] bg-dark-blue-card p-[3rem] pb-[4rem] rounded-[2rem]">
+		<div
+			class="w-[43.7rem] bg-dark-blue-card p-[3rem] pb-[4rem] rounded-[2rem]"
+		>
+			<!-- <div
+				class="hover:bg-cyan cursor-pointer h-[37.8rem] rounded-[1rem]"
+				style="
+					background-image: url(images/image-equilibrium.jpg);
+					background-size: contain;
+				"
+			></div> -->
+			<div
+				class="opacity-0 hover:opacity-100 cursor-pointer w-[37.8rem] h-[37.8rem] rounded-[1rem] absolute z-10 flex justify-center items-center overflow-hidden"
+			>
+				<img src="images/icon-view.svg" alt="" class="z-20" />
+				<div
+					class="bg-cyan opacity-50 w-[37.8rem] h-[37.8rem] absolute"
+				></div>
+			</div>
 			<img
 				src="images/image-equilibrium.jpg"
 				alt="Equilibrium"
-				class="rounded-[1rem]"
+				class="rounded-[1rem] hover:bg-cyan"
 			/>
-			<h1 class="font-[600] text-[2.8rem] mt-[2.8rem]">
+			<h1
+				class="font-[600] text-[2.8rem] mt-[2.8rem] hover:text-cyan cursor-pointer select-none"
+			>
 				Equilibrium #3429
 			</h1>
 			<p class="mt-[1.7rem]">
@@ -71,17 +90,24 @@
 					alt="Jules Wyvern"
 					class="h-[4rem] border border-white rounded-full"
 				/>
-				<span class="text-[2rem] mt-[.5rem]">Creation of <span class="font-[500] text-white">Jules Wyvern</span></span>
+				<span class="text-[2rem] mt-[.5rem]"
+					>Creation of
+					<span
+						class="font-[500] text-white hover:text-cyan cursor-pointer select-none"
+						>Jules Wyvern</span
+					></span
+				>
 			</div>
 		</div>
 
-		<div class="attribution">
+		<!-- <div class="mt-10">
 			Challenge by
 			<a
 				href="https://www.frontendmentor.io?ref=challenge"
 				target="_blank"
+        class="underline"
 				>Frontend Mentor</a
-			>. Coded by <a href="#">Your Name Here</a>.
-		</div>
+			>. Coded by <a href="https://reshaditiya.com" class="underline">Resha Aditiya</a>.
+		</div> -->
 	</body>
 </html>
