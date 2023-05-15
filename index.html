@@ -1,33 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<html lang="en" style="font-size: 8px">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<title>Frontend Mentor | NFT preview card component</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="//unpkg.com/alpinejs" defer></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							"soft-blue": "#8bacda",
+							cyan: "#00fff7",
+							"dark-blue-main": "#0d192b",
+							"dark-blue-card": "#14253d",
+							"dark-blue-line": "#2f415b",
+							white: "#ffffff",
+							gray: "#9eb4d2",
+						},
+					},
+				},
+			}
+		</script>
+	</head>
+	<body
+		style="font-size: 18px; font-family: Outfit"
+		class="flex flex-col items-center mt-[19rem] bg-dark-blue-main text-gray font-[300]"
+	>
+		<div class="w-[43.7rem] bg-dark-blue-card p-[3rem] pb-[4rem] rounded-[2rem]">
+			<img
+				src="images/image-equilibrium.jpg"
+				alt="Equilibrium"
+				class="rounded-[1rem]"
+			/>
+			<h1 class="font-[600] text-[2.8rem] mt-[2.8rem]">
+				Equilibrium #3429
+			</h1>
+			<p class="mt-[1.7rem]">
+				Our Equilibrium collection promotes balance and calm.
+			</p>
+			<div class="mt-[2.3rem] flex justify-between text-[2rem]">
+				<span class="flex items-center gap-[.8rem]">
+					<img src="images/icon-ethereum.svg" alt="" />
+					<span class="font-[600] text-[2rem] text-cyan"
+						>0.041 ETH</span
+					>
+				</span>
+				<span class="flex items-center gap-[.8rem]">
+					<img src="images/icon-clock.svg" alt="" />
+					<span class="text-[2rem]">3 days left</span>
+				</span>
+			</div>
+			<hr class="mt-[2.8rem] text-dark-blue-line" />
+			<div class="mt-[2rem] flex gap-[2rem]">
+				<img
+					src="images/image-avatar.png"
+					alt="Jules Wyvern"
+					class="h-[4rem] border border-white rounded-full"
+				/>
+				<span class="text-[2rem] mt-[.5rem]">Creation of <span class="font-[500] text-white">Jules Wyvern</span></span>
+			</div>
+		</div>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+		<div class="attribution">
+			Challenge by
+			<a
+				href="https://www.frontendmentor.io?ref=challenge"
+				target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">Your Name Here</a>.
+		</div>
+	</body>
 </html>
